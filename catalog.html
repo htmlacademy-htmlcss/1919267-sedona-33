@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог гостиниц Седоны</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <img class="logo" src="#" alt="Логотип сайта Седона">
+    <img class="logo" src="images/header/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -53,50 +54,50 @@
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
+      <section class="hotels-filter">
+        <h2 class="hotels-filter-title">Фильтр поиска гостиниц Седоны</h2>
+        <form class="hotels-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="hotels-filter-group">
+            <h3 class="hotels-filter-subtitle">Инфраструктура:</h3>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="swimming-pool" checked>
+              Бассейн
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="parking" checked>
+              Парковка
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="Wi-Fi">
+              Wi-Fi
+            </label>
+          </div>
+          <div class="hotels-filter-group">
+            <h3 class="hotels-filter-subtitle">Тип жилья:</h3>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-of-hotel" value="hotel" checked>
+              Гостиница
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-of-hotel" value="Motel">
+              Мотель
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="type-of-hotel" value="Apartments">
+              Апартаменты
+            </label>
+          </div>
+          <div class="hotels-filter-group">
+            <h3 class="hotels-filter-subtitle">Стоимость, ₽:</h3>
+            <input class="control" type="number" placeholder="от" value="0">
+            <input class="control" type="number" placeholder="до" value="9000">
+            <input type="range" min="0" max="9000" value="7000">
+            <input class="hotels-filter-button button" type="submit" value="Применить">
+            <input class="hotels-filter-button button-reset" type="reset" value="Сбросить">
+          </div>
+        </form>
+      </section>
     </header>
-    <section class="hotels-filter">
-      <h2 class="hotels-filter-title">Фильтр поиска гостиниц Седоны</h2>
-      <form class="hotels-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="hotels-filter-group">
-          <h3 class="hotels-filter-subtitle">Инфраструктура:</h3>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="swimming-pool" checked>
-            Бассейн
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="parking" checked>
-            Парковка
-          </label>
-          <label class="control">
-            <input class="control-input" type="checkbox" name="Wi-Fi">
-            Wi-Fi
-          </label>
-        </div>
-        <div class="hotels-filter-group">
-          <h3 class="hotels-filter-subtitle">Тип жилья:</h3>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-of-hotel" value="hotel" checked>
-            Гостиница
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-of-hotel" value="Motel">
-            Мотель
-          </label>
-          <label class="control">
-            <input class="control-input" type="radio" name="type-of-hotel" value="Apartments">
-            Апартаменты
-          </label>
-        </div>
-        <div class="hotels-filter-group">
-          <h3 class="hotels-filter-subtitle">Стоимость, ₽:</h3>
-          <input class="control" type="number" placeholder="от" value="0">
-          <input class="control" type="number" placeholder="до" value="9000">
-          <input type="range" min="0" max="9000" value="7000">
-          <input class="hotels-filter-button button" type="submit" value="Применить">
-          <input class="hotels-filter-button button-reset" type="reset" value="Сбросить">
-        </div>
-      </form>
-    </section>
     <section class="hotels-catalog">
       <h2 class="visually-hidden">Список найденных гостиниц Седоны</h2>
       <header class="hotels-catalog-header">
@@ -118,7 +119,8 @@
       </header>
       <ul class="hotels-catalog-list">
         <li class="hotels-catalog-card">
-          <img src="#" alt="Amara Resort & Spa" class="hotels-catalog-item-image">
+          <img class="hotels-catalog-item-image" src="images/main-inner/hotels/amara-resort-spa.jpg" width="299"
+            height="206" alt="Amara Resort & Spa" title="Вид из окон гостиницы Amara Resort & Spa">
           <h3 class="hotels-catalog-card-title">Amara Resort & Spa</h3>
           <span class="hotels-catalog-card-type">Гостиница</span>
           <span class="hotels-catalog-card-price">От 4000 ₽</span>
@@ -130,7 +132,8 @@
           <a href="#" class="rating-by-reviews">Рейтинг: 8,5</a>
         </li>
         <li class="hotels-catalog-card">
-          <img src="#" alt="Desert Quail Inn" class="hotels-catalog-item-image">
+          <img class="hotels-catalog-item-image" src="images/main-inner/hotels/desert-quail-inn.jpg" width="299"
+            height="206" alt="Desert Quail Inn" title="Вид на гостиницу Desert Quail Inn">
           <h3 class="hotels-catalog-card-title">Desert Quail Inn</h3>
           <span class="hotels-catalog-card-type">Гостиница</span>
           <span class="hotels-catalog-card-price">От 3000 ₽</span>
@@ -142,7 +145,8 @@
           <a href="#" class="rating-by-reviews">Рейтинг: 8,9</a>
         </li>
         <li class="hotels-catalog-card">
-          <img src="#" alt="Villas at Poco Diablo" class="hotels-catalog-item-image">
+          <img class="hotels-catalog-item-image" src="images/main-inner/hotels/villas-at-poco-diablo.jpg" width="299"
+            height="206" alt="Villas at Poco Diablo" title="Вид из окон гостиницы Villas at Poco Diablo">
           <h3 class="hotels-catalog-card-title">Villas at Poco Diablo</h3>
           <span class="hotels-catalog-card-type">Гостиница</span>
           <span class="hotels-catalog-card-price">От 2000 ₽</span>
@@ -154,7 +158,8 @@
           <a href="#" class="rating-by-reviews">Рейтинг: 9,2</a>
         </li>
         <li class="hotels-catalog-card">
-          <img src="#" alt="GreenTree Inn" class="hotels-catalog-item-image">
+          <img class="hotels-catalog-item-image" src="images/main-inner/hotels/greentree-inn.jpg" width="299"
+            height="206" alt="GreenTree Inn" title="Вид из окон гостиницы GreenTree Inn">
           <h3 class="hotels-catalog-card-title">GreenTree Inn</h3>
           <span class="hotels-catalog-card-type">Гостиница</span>
           <span class="hotels-catalog-card-price">От 3000 ₽</span>

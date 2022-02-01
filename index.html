@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <img class="logo" src="#" alt="Логотип сайта Седона">
+    <img class="logo" src="images/header/logo.svg" width="139" height="70" alt="Логотип сайта Седона">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -43,7 +44,11 @@
   <main class="main-index">
     <h1 class="visually-hidden">Путешествуйте в Седону</h1>
     <section class="hero">
-      <h2 class="hero-title">Добро пожаловать в Седону</h2>
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <div class="hero-welcome-image">
+        <img class="hero-welcome-text" src="images/main-index/welcome.png" width="458" height="352"
+          alt="Добро пожаловать в великолепную Седону!">
+      </div>
       <b class="hero-description">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </b>
@@ -57,7 +62,8 @@
             <h3 class="advantages-subtitle">Настоящий городок</h3>
             <span class="advantages-number">— №1 —</span>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-image" src="#" alt="Одна из улиц городка Седона">
+            <img class="advantages-image" src="images/main-index/photo-1.jpg" width="800" height="384"
+              alt="Одна из улиц городка Седона">
           </div>
           <ul class="advantages-sublist">
             <li class="advantages-sublist-item">
@@ -84,7 +90,8 @@
             <h3 class="advantages-subtitle">Там есть мост дьявола</h3>
             <span class="advantages-number">— №2 —</span>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-image" src="#" alt="Мост дьявола городка Седона">
+            <img class="advantages-image" src="images/main-index/photo-2.jpg" width="800" height="384"
+              alt="Мост дьявола городка Седона">
           </div>
         </li>
         <li class="advantages-item">
@@ -114,7 +121,7 @@
       <h2 class="hotels-search-title">Заинтересовались?</h2>
       <p class="hotels-seach-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
-      <a class="hotels-search-link button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В CЕДОНЕ</a>
+      <a class="hotels-search-link button" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
     <section class="subscribe">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -152,7 +159,7 @@
     </div>
     <div class="page-footer-htmlacademy">
       <a href="https://htmlacademy.ru/" class="htmlacademy-logo">
-        <img src="#" alt="Сделано в HTML Academy">
+        <img src="images/footer/logo_htmlacademy.svg" width="115" height="34" alt="Сделано в HTML Academy">
       </a>
     </div>
   </footer>
