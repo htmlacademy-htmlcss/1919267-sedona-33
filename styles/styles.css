@@ -77,28 +77,23 @@ body {
 }
 
 .page-header-container {
-  position: absolute;
-  min-height: 70px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 1060px;
-  margin: 0 auto;
+  width: 892px;
+  margin-left: 239px;
 }
 
 .logo {
-  margin-right: 30px;
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation-list {
-  position: relative;
-  top: -4px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -110,7 +105,6 @@ body {
 }
 
 .navigation-user {
-  margin-left: auto;
   max-width: 500px;
 }
 
@@ -121,7 +115,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  padding: 19px 17px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
