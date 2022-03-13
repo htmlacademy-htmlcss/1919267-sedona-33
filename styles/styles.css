@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/pt-sans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/pt-sans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -258,8 +258,11 @@ body {
   padding-top: 51px;
   display: block;
   height: 485px;
-  background: url("../images/main-index/divider.png") no-repeat 0 100.05%,
-    url("../images/main-index/index-background.jpg") no-repeat;
+  background-color: #e5e5e5;
+  background-image: url("../images/main-index/divider.png"),
+    url("../images/main-index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 
 .welcome-text-image {
@@ -319,6 +322,8 @@ body {
   text-align: center;
   width: 400px;
   padding-top: 77px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .advantages-info {
@@ -347,8 +352,8 @@ body {
   min-height: 384px;
   text-align: center;
   padding-top: 184px;
-  padding-right: 90px;
-  padding-left: 90px;
+  padding-right: 75px;
+  padding-left: 75px;
 }
 
 .advantages-sublist-item:nth-of-type(odd) {
@@ -360,15 +365,15 @@ body {
 }
 
 .advantages-sublist-item-house {
-  background: url("../images/main-index/icon-house.svg") no-repeat center 28%;
+  background: url("../images/main-index/icon-house.svg") no-repeat center 89px;
 }
 
 .advantages-sublist-item-food {
-  background: url("../images/main-index/icon-hamburger.svg") no-repeat center 28%;
+  background: url("../images/main-index/icon-hamburger.svg") no-repeat center 89px;
 }
 
 .advantages-sublist-item-present {
-  background: url("../images/main-index/icon-present.svg") no-repeat center 28%;
+  background: url("../images/main-index/icon-present.svg") no-repeat center 84px;
 }
 
 .advantages-subtitle {
@@ -389,8 +394,6 @@ body {
 }
 
 .advantages-description {
-  padding-left: 80px;
-  padding-right: 80px;
   padding-bottom: 79px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -407,11 +410,15 @@ body {
 
 .advantages-items-without-details .advantages-item {
   padding-top: 86px;
+  padding-left: 75px;
+  padding-right: 75px;
   width: 400px;
 }
 
 .advantages-items-without-details .advantages-number,
 .advantages-items-without-details .advantages-description {
+  padding-left: 0;
+  padding-right: 0;
   color: #333333;
 }
 
@@ -767,7 +774,7 @@ body {
   height: 8px;
 }
 
-.breadscrumbs-icon-home {
+.breadcrumbs-icon-home {
   fill: #ffffff;
 }
 
