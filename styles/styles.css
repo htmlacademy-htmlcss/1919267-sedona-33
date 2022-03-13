@@ -262,7 +262,7 @@ body {
   background-image: url("../images/main-index/divider.png"),
     url("../images/main-index/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: 0 100%;
+  background-position: 0 100.05%;
 }
 
 .welcome-text-image {
@@ -537,6 +537,7 @@ body {
 
 .subscribe-input-email {
   width: 600px;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -587,7 +588,7 @@ body {
 
 .page-footer-container {
   width: 1060px;
-  height: 120px;
+  min-height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
